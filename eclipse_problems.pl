@@ -1,4 +1,4 @@
-% Constraing Programming Lab - Jeffrey Herr
+% Constraing Programming - Jeffrey Herr
 :- lib(ic).
 :- lib(lists).
 :- lib(branch_and_bound).
@@ -19,7 +19,7 @@ getTea(Teas) :-
 
 
 
-% 2.  beer barrel
+% 2.  beer barrels
 whichBarrel(Beer) :-
 	Beer :: [15..31],
 
@@ -30,7 +30,7 @@ whichBarrel(Beer) :-
 
 	write(Beer).
 
-% 3.  max digit thingy
+% 3.  max digits
 digitize(Digits) :-
 	Digits = [A1, A2, A3, B1, B2, C1, C2, D1, D2],
 	Digits :: [1..9],
@@ -58,7 +58,7 @@ basket(Eggs) :-
 	minimize(labeling(Eggs), Egg).
 
 
-% 5.  what the hay
+% 5.  what the Hay
 hay(Weights) :-
 	Weights = [One, Two, Three, Four, Five],
 	Weights :: [0..300],
@@ -74,7 +74,7 @@ hay(Weights) :-
 	labeling(Weights).
 
 
-% 6.  planets
+% 6.  Planets
 spell(Planets) :-
 	Alphabet = [A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z],
 	Planets = [P,L,A,N,E,T,S],
@@ -100,7 +100,7 @@ spell(Planets) :-
 	minimize(labeling(Planets), Cost).
 
 
-% 7. wines
+% 7. Wines
 wine(Nephews) :-
 
 	A = [FourA, ThreeA, TwoA, OneA, EmptyA], 
